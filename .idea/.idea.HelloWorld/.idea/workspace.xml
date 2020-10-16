@@ -22,14 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb0c280e-4bfa-4801-bcdf-595c37634dd7" name="Default Changelist" comment="refactor огород">
+    <list default="true" id="eb0c280e-4bfa-4801-bcdf-595c37634dd7" name="Default Changelist" comment="complete Arr2">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/MinFun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/MinFun.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +110,8 @@
       <workItem from="1601637275323" duration="1400000" />
       <workItem from="1602064490637" duration="2701000" />
       <workItem from="1602741870646" duration="7083000" />
+      <workItem from="1602818929705" duration="222000" />
+      <workItem from="1602846804832" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="refactor огород">
       <created>1600888669803</created>
@@ -123,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600888669803</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="complete Arr2">
+      <created>1602819027596</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602819027596</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="refactor огород" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor огород" />
+    <MESSAGE value="complete Arr2" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete Arr2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="225" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599479082827">
@@ -253,9 +258,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="279" y="78" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1599462485902" />
-    <state x="233" y="94" key="Vcs.Push.Dialog.v2" timestamp="1600888671533">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="280" y="113" key="Vcs.Push.Dialog.v2" timestamp="1602819031720">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="233" y="94" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1600888671533" />
+    <state x="280" y="113" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1602819031720" />
   </component>
 </project>

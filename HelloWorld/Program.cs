@@ -3,25 +3,35 @@ using System;
 using System.Collections;
 using System.Linq;
 
-namespace Garden
+namespace HelloWorld
 {
-    class Program
+    internal static class Program
     {
         public static void Main()
         {
             var arr1 = new[] {1, 2, 3, 4, 5, 6};
             var arr2 = new[] {1, 3, 4, 7, 8, 10};
+            
             var newArr = Union(arr1, arr2);
-            foreach (var el in newArr)
+            foreach (var e in newArr)
             {
-                Console.WriteLine(el);
+                Console.Write(e + " ");
             }
+            Console.WriteLine();
+
+            var newArr3 = Crossing(arr1, arr2);
+            foreach (var e in newArr3)
+            {
+                Console.Write(e + " ");
+            }
+            Console.WriteLine();
 
             var newArr2 = Difference(arr1, arr2);
             foreach (var e in newArr2)
             {
-                Console.WriteLine(e);
+                Console.Write(e + " ");
             }
+            Console.WriteLine();
         }
         
 
