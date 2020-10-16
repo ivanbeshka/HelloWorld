@@ -1,37 +1,74 @@
-﻿using System;
+﻿#nullable enable
+using System;
+using System.Collections;
+using System.Linq;
 
 namespace Garden
 {
     class Program
     {
-
-        static double FindAreaOfGarden()
+        public static void Main()
         {
-            var lengthOfGarden = Convert.ToDouble(Console.ReadLine());
-            var lengthOfRope = Convert.ToDouble(Console.ReadLine());
-            double areaOfGarden;
-
-            //if rope length >= square diagonal/2 
-            if (lengthOfRope >= (lengthOfGarden / 2 * Math.Sqrt(2)))
+            var arr1 = new[] {1, 2, 3, 4, 5, 6};
+            var arr2 = new[] {1, 3, 4, 7, 8, 10};
+            var newArr = Union(arr1, arr2);
+            foreach (var el in newArr)
             {
-                areaOfGarden = lengthOfGarden * lengthOfGarden;
-            }
-            else
-            {
-                if (lengthOfRope <= lengthOfGarden / 2)
-                {
-                    areaOfGarden = Math.PI * lengthOfRope * lengthOfRope;
-                }
-                else
-                {
-                    var angleOfSector = Math.Acos(Math.Cos(lengthOfGarden / 2 / lengthOfRope * Math.PI / 180)) * 180 / Math.PI;
-                    var areaOfFirstSector = lengthOfGarden / 4 * Math.Sqrt((lengthOfRope * lengthOfRope) - (lengthOfGarden * lengthOfGarden / 4));
-                    var areaOfSecondSector = Math.PI * lengthOfRope * lengthOfRope * angleOfSector / 360;
-                    areaOfGarden = 4 * (areaOfFirstSector + areaOfSecondSector);
-                }
+                Console.WriteLine(el);
             }
 
-            return areaOfGarden;
+            var newArr2 = Difference(arr1, arr2);
+            foreach (var e in newArr2)
+            {
+                Console.WriteLine(e);
+            }
+        }
+        
+
+        private static int[] Union(int[] arr1, int[] arr2)
+        {
+            var newArr = new int[arr1.Length + arr2.Length];
+            Array.Copy(arr1, newArr, arr1.Length);
+            Array.Copy(arr2, 0, newArr, arr1.Length, arr2.Length);
+            Array.Sort(newArr);
+            return newArr;
+        }
+
+        private static object[] Crossing(int[] arr1, int[] arr2)
+        {
+            var newArr = new ArrayList();
+            foreach (var e in arr1)
+            {
+                if (arr2.Contains(e))
+                {
+                    newArr.Add(e);
+                }
+            }
+
+            return newArr.ToArray()!;
+        }
+
+        private static object[] Difference(int[] arr1, int[] arr2)
+        {
+            var newArr = new ArrayList();
+
+            foreach (var e in arr1)
+            {
+                if (!arr2.Contains(e))
+                {
+                    newArr.Add(e);
+                }
+            }
+
+            foreach (var e in arr2)
+            {
+                if (!arr1.Contains(e))
+                {
+                    newArr.Add(e);
+                }
+            }
+
+            return newArr.ToArray()!;
         }
     }
 }

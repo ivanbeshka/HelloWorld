@@ -4,11 +4,6 @@ namespace HelloWorld
 {
     public class MinFun
     {
-
-        static void Main()
-        {
-        
-        }
         
         private static string GetMinX(int a, int b, int c)
         {
